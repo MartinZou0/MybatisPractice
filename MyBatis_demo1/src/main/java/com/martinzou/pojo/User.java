@@ -4,7 +4,7 @@ package com.martinzou.pojo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+//测试设置代理后不开启Clash是否能够访问Gitee
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
