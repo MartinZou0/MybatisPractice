@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.martinzou</groupId>
-    <artifactId>MyBatis_demo1</artifactId>
+    <artifactId>MyBatis_demo2</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <packaging>jar</packaging>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
@@ -47,8 +47,5 @@
             <version>1.2.17</version>
         </dependency>
     </dependencies>
-
-
-
 
 </project>
