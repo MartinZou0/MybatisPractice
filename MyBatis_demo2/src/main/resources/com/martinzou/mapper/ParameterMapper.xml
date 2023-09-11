@@ -4,4 +4,32 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.martinzou.mapper.ParameterMapper">
 
+
+    <select id="getAllUser" resultType="User">
+        select * from t_user
+    </select>
+
+    <select id="getUserByName" resultType="User">
+        select * from t_user where user_name=#{userName}
+    </select>
+
+    <select id="checkLogin" resultType="User">
+        <!--select * from t_user where user_name=#{arg0} and password =#{arg1}-->
+        select * from t_user where user_name='${param1}' and password ='${param2}'
+    </select>
+
+    <select id="checkLoginByMap" resultType="User">
+        select * from t_user where user_name=#{userName} and password =#{password}
+    </select>
+
+
+<!--    int insertUser(User user);-->
+    <insert id="insertUser">
+        insert into t_user values(null,#{userName},#{password},#{age},#{gender},#{email})
+    </insert>
+
+    <select id="checkLoginByParam" resultType="User">
+        select * from t_user where user_name=#{name} and password =#{pwd}
+    </select>
+
 </mapper>
