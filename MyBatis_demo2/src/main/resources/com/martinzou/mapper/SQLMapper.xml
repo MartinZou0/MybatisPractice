@@ -20,6 +20,6 @@
 
 
     <insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
-        insert into t_user values(null,#{userName},#{password},#{age,#{gender},#{email})
+        insert into t_user values(null,#{userName},#{password},#{age},#{gender},#{email})
     </insert>
 </mapper>
